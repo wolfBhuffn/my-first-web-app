@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first Dynamic Web App</title>
+    <title>Wolf's Dynamic Task List</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome, Wolf!</h1>
-        <button id="changeTextBtn">Click Me To Change Text</button>
-    </header>
+    <div class="container">
+        <header>
+            <h1>My Daily Tasks</h1>
+        </header>
 
-    <main>
-        <p id="dynamicParagraph">This text will change when you click the button.</p>
-        <div class="responsive-box">
-            This box will adapt to screen size.
-        </div>
-    </main>
+        <main>
+            <form id="task-form">
+                <input type="text" id="new-task-input" placeholder="Add a new task...">
+                <button type="submit" id="add-task-btn">Add Task</button>
+            </form>
 
-    <footer>
-        <p>&copy; 2025 Wolf Sabyter. All Rights Reserved.</p>
-    </footer>
-    
+            <section class="task-list-section">
+                <h2>Tasks</h2>
+                <ul id="tasks">
+                    </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Wolf Sabyter. All rights reserved.</p>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
